@@ -2,12 +2,12 @@
     <script type="text/javascript" language="JavaScript">
         var UTILS_STARTUP_FRAME       = 'Startup';
         function UTILS_GetMainStartupPage(){
-            return top.window.opener.top.frames[UTILS_STARTUP_FRAME]
+            return top.window.frames[UTILS_STARTUP_FRAME]
         }
     </script>
 </head>
 <body onload="UTILS_GetMainStartupPage().STARTPG_LoadDirectTransitionToDoc()">
 <div>
-    frame content
+    In FrameL2 will call onload: top.window.frames[Startup].STARTPG_LoadDirectTransitionToDoc()
 </div>
 </body>
